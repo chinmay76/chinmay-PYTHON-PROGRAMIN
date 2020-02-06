@@ -24,5 +24,5 @@ class Bankapp:
     def deposit(self):
         amount=float(input("Enter amount to deposit: "))
         return self.cb+amount
+    
 Bankapp()
-
