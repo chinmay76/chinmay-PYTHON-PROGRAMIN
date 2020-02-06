@@ -16,7 +16,7 @@ class Bankapp:
                 print("Current balance",self.deposit())
             else:
                break
-      #Defining function to withdraw      
+     #Defining function to withdraw      
     def withdraw(self):
         amount=float(input("Enter amount to widraw: "))
         return self.cb-amount
