@@ -2,6 +2,7 @@
 class Bankapp:
     # initializin constuctor
     def __init__(self):
+        
         while True:
             print("WELCOME TO HDFC BANK")
             n=input("Name: ")
@@ -18,10 +19,12 @@ class Bankapp:
                break
      # Defining function to withdraw      
     def withdraw(self):
+        
         amount=float(input("Enter amount to widraw: "))
         return self.cb-amount
     # Defining function for deposit
     def deposit(self):
+        
         amount=float(input("Enter amount to deposit: "))
         return self.cb+amount
     
