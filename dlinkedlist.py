@@ -7,18 +7,18 @@ class Node:
 class DoublyLinkedList:       
     def __init__(self):    
         self.head = None;    
-        self.tail = None;      
+        self.foot = None;      
     def addNode(self, data):       
         newNode = Node(data);     
         if(self.head == None):    
-            self.head = self.tail = newNode;    
+            self.head = self.foot = newNode;    
             self.head.previous = None;       
-            self.tail.next = None;    
+            self.foot.next = None;    
         else:    
-            self.tail.next = newNode;    
-            newNode.previous = self.tail;     
-            self.tail = newNode;    
-            self.tail.next = None;    
+            self.foot.next = newNode;    
+            newNode.previous = self.foot;     
+            self.foot = newNode;    
+            self.foot.next = None;    
     def display(self):    
         current = self.head;    
         if(self.head == None):    
